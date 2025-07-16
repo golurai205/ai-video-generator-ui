@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Video Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 AI वीडियो जनरेटर / AI Video Generator</h1>
+    <textarea id="scriptInput" placeholder="✍️ अपनी स्क्रिप्ट यहाँ लिखें... (Write your script here)"></textarea>
+
+    <div class="row">
+      <label>🌐 Language / भाषा:</label>
+      <select id="language">
+        <option value="english">English</option>
+        <option value="hindi">हिंदी</option>
+      </select>
+
+      <label>🔣 Voice Type:</label>
+      <select id="voice">
+        <option value="male">Male / पुरुष</option>
+        <option value="female">Female / महिला</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>🎨 Video Style:</label>
+      <select id="style">
+        <option value="realistic">Realistic</option>
+        <option value="cartoon">Cartoon</option>
+        <option value="3d">3D</option>
+        <option value="cinematic">Cinematic</option>
+      </select>
+
+      <label>🎝 Quality:</label>
+      <select id="quality">
+        <option value="720p">720p</option>
+        <option value="1080p">1080p</option>
+      </select>
+
+      <label>⏱️ Duration:</label>
+      <select id="duration">
+        <option value="30">30 sec</option>
+        <option value="60">1 min</option>
+        <option value="120">2 min</option>
+      </select>
+    </div>
+
+    <label class="checkbox">
+      <input type="checkbox" id="subtitles" /> 📄 Add Subtitles / सबटाइटल्स जोड़ें
+    </label>
+
+    <button onclick="generateVideo()">🎥 Generate Video / वीडियो बनाएं</button>
+
+    <div class="auth">
+      <button onclick="login()">🔐 Login with Google</button>
+      <button onclick="logout()">🚪 Logout</button>
+    </div>
+
+    <a href="/history.html" class="history-link">📜 My Videos / मेरी वीडियो</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
